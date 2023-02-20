@@ -1,1 +1,16 @@
-:root
+:root{
+    --mainColor:#BADA55;
+    --mainFont:tahoma;
+    --mainPadding:010px;
+}
+
+
+div{
+    --mainColor:#BADDAD;
+    padding: calc(5px +var(--mainPadding));
+    background-color: var(--mainColor);
+}
+
+span{
+    color: var(--mainColor);
+}
