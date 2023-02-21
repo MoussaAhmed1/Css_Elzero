@@ -10,37 +10,11 @@
     box-sizing: border-box;
 }
 
-
-.float,.flex{
-    width: 600px;
-    background-color: var(--mainColor);
-    border: 15px solid rebeccapurple;
-    margin: 20px auto;
-    overflow: hidden;
+img{
+    filter: blur(4px);
+    transition: .5s;
 }
-.Box{
-    background-color: brown;
-    padding: var(--mainPadding);
-    width: calc(95% / 4);
+img:hover{
+    filter: blur(0);
 
-}
-
-.float .Box{
-    float: left;
-
-
-
-}
-.flex{
-    display: flex;
-    /* flex-direction: row;
-    flex-wrap: nowrap; */
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-
-}
-
-.flex .Box{
-    border-left: #BADA55 solid 1px;
-    margin: inherit 1px;
 }
