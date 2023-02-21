@@ -2,15 +2,45 @@
     --mainColor:#BADA55;
     --mainFont:tahoma;
     --mainPadding:010px;
+    --English:ltr;
+    --arabic:rtl;
+    direction: var(--English);
+}
+*{
+    box-sizing: border-box;
 }
 
 
-div{
-    --mainColor:#BADDAD;
-    padding: calc(5px +var(--mainPadding));
+.float,.flex{
+    width: 600px;
     background-color: var(--mainColor);
+    border: 15px solid rebeccapurple;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.Box{
+    background-color: brown;
+    padding: var(--mainPadding);
+    width: calc(95% / 4);
+
 }
 
-span{
-    color: var(--mainColor);
+.float .Box{
+    float: left;
+
+
+
+}
+.flex{
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: nowrap; */
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+}
+
+.flex .Box{
+    border-left: #BADA55 solid 1px;
+    margin: inherit 1px;
 }
