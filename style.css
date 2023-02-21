@@ -6,7 +6,7 @@
 
 
 div{
-    --mainColor:#BADDAD;
+    --mainColor:#13eee3;
     padding: calc(5px +var(--mainPadding));
     background-color: var(--mainColor);
 }
