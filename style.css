@@ -11,16 +11,36 @@
 }
 
 
+.float,.flex{
+    width: 600px;
+    background-color: var(--mainColor);
+    border: 15px solid rebeccapurple;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.Box{
+    background-color: brown;
+    padding: var(--mainPadding);
+    width: calc(95% / 4);
 
-p,input{
-    caret-color:  blueviolet;
-    display: inline-block;
-    width: 100%;
 }
 
-input{
-    border: blueviolet 1px solid;
+.float .Box{
+    float: left;
+
+
+
 }
-button{
-    pointer-events: none;
+.flex{
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: nowrap; */
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+
+}
+
+.flex .Box{
+    border-left: #BADA55 solid 1px;
+    margin: inherit 1px;
 }
