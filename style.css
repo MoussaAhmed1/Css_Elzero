@@ -23,4 +23,6 @@ input{
 }
 button{
     pointer-events: none;
+    background-color: #333;
+    opacity: .5;
 }
