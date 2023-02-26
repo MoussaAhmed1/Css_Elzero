@@ -9,7 +9,7 @@
 
 
 div{
-    --mainColor:#BADDAD;
+    --mainColor:#edf0eb;
     padding: calc(5px +var(--mainPadding));
     background-color: var(--mainColor);
 }
@@ -37,6 +37,10 @@ div{
     height: 300px;
     position: relative;
     padding-top: 20px;
+    border-radius: 15px;
+    box-shadow: -2px 6px 7px 9px #33333359;
+
+
 }
 
 div::before{
