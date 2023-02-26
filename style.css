@@ -11,36 +11,20 @@
 }
 
 
-.float,.flex{
+.grid{
     width: 600px;
+    height: 800px;
     background-color: var(--mainColor);
     border: 15px solid rebeccapurple;
     margin: 20px auto;
     overflow: hidden;
+    display: grid;
+    grid-template-columns: 10% 20% 1fr 2fr ;
 }
 .Box{
     background-color: brown;
     padding: var(--mainPadding);
-    width: calc(95% / 4);
-
+   
 }
 
-.float .Box{
-    float: left;
 
-
-
-}
-.flex{
-    display: flex;
-    /* flex-direction: row;
-    flex-wrap: nowrap; */
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-
-}
-
-.flex .Box{
-    border-left: #BADA55 solid 1px;
-    margin: inherit 1px;
-}
