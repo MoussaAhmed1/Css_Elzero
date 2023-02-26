@@ -2,7 +2,10 @@
     --mainColor:#BADA55;
     --mainFont:tahoma;
     --mainPadding:010px;
+    
 }
+
+
 
 
 div{
@@ -13,4 +16,39 @@ div{
 
 span{
     color: var(--mainColor);
+}
+
+
+/* Gradiants */
+
+.parent{
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+   
+}
+
+div{
+    display: flex;
+    text-transform: uppercase;
+    width: 800px;
+    height: 300px;
+    position: relative;
+    padding-top: 20px;
+}
+
+div::before{
+    content: "";
+    width: 100%;
+    top: 0;
+    height: 20px;
+    position: absolute;
+   border-radius: 2px;
+   background-image: linear-gradient(to right,#2B3467 20%,#c3c4c3 20% ,#c3c4c3 40%,#BAD7E9 40% ,#BAD7E9 80%,#EB455F 80%);
+}
+body{
+    background-color: #45aeeb;
+    background-image: linear-gradient(90deg,#45aeeb,#017dc5);
 }
