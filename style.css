@@ -15,11 +15,17 @@
     width: 600px;
     height: 800px;
     background-color: var(--mainColor);
-    border: 15px solid rebeccapurple;
+    border: 1px solid rebeccapurple;
     margin: 20px auto;
     overflow: hidden;
+    /*parent*/
     display: grid;
-    grid-template-columns: 10% 20% 1fr 2fr ;
+    grid-template-columns: repeat(4,auto) ;
+    grid-template-rows: repeat(3,auto);
+    gap: 10px ;
+    justify-content: space-between;
+    align-content: space-between;
+
 }
 .Box{
     background-color: brown;
