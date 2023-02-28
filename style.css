@@ -1,36 +1,59 @@
-:root{
-    --mainColor:#BADA55;
-    --mainFont:tahoma;
-    --mainPadding:010px;
-    --English:ltr;
-    --arabic:rtl;
-    direction: var(--English);
+:root {
+  --mainColor: #bada55;
+  --mainFont: tahoma;
+  --mainPadding: 010px;
+  --English: ltr;
+  --arabic: rtl;
+  direction: var(--English);
 }
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0%;
 }
 
-
-.grid{
-    width: 600px;
-    height: 800px;
-    background-color: var(--mainColor);
-    border: 1px solid rebeccapurple;
-    margin: 20px auto;
-    overflow: hidden;
-    /*parent*/
+.my-page {
+  background: #eee;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 50px auto 50px;
+  grid-template-areas: "header header header header header"  "aside aside main main main" "footer footer footer footer footer";
+}
+header{
     display: grid;
-    grid-template-columns: repeat(4,auto) ;
-    grid-template-rows: repeat(3,auto);
-    gap: 10px ;
-    justify-content: space-between;
-    align-content: space-between;
-
+    grid-area:header ;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: auto ;
+    grid-template-areas: "logo logo nav nav nav";
 }
-.Box{
-    background-color: brown;
-    padding: var(--mainPadding);
-   
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-flex;
 }
 
+.logo {
+  background-color: var(--mainColor);
+  grid-area: logo;
+}
+nav {
+  background-color: aqua;
+  grid-area: nav;
+  
+}
+aside {
+  background-color: blue;
+  grid-area: aside;
+}
 
+footer {
+  background-color: black;
+  grid-area: footer;
+}
+
+main {
+  background-color: chocolate;
+  grid-area: main;
+}
