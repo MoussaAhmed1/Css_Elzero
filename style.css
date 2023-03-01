@@ -14,19 +14,23 @@
 
 .my-page {
   background: #eee;
-  margin: auto;
-  height: 800px;
-  width: 50%;
   display: grid;
-  grid-template-columns: repeat(6, auto);
-  grid-template-rows: repeat(3,1fr);
-  gap: 10px;
-  align-content: center;
+  min-height: 500px;
+  grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+  /* grid-template-rows: repeat(auto-fill,1fr); */
+  gap:5px;
+  /* i think all of [ auto-fill - auto-fit ] has the same meaning */
+  /* i found auto fit is the best */
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
   
 }
 
 .box{
   background-color: chocolate;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
