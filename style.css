@@ -11,7 +11,7 @@
 }
 
 img{
-    filter: blur(4px);
+    filter: blur(3px);
     transition: .5s;
 }
 img:hover{
@@ -29,4 +29,49 @@ img:hover{
 .image:hover img{
     transform: scale(1.1) rotate(5deg);
 
+}
+
+/*making  a skew transform without effecting our h1*/
+
+h1{
+    position: relative;
+    color: rgb(255, 255, 255);
+    width: fit-content;
+    padding: 5px;
+    
+}
+
+h1::before{
+    content: " ";
+    background-color: #c13b3b;
+    width:100%;
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+    transform: skew(15deg);
+    
+}
+
+/*changing the transform-origin to make a rotate about different origin */
+.box{
+    width: 200px;
+    height: 180px;
+    margin: auto;
+    background: #000;
+    position: relative;
+    transform-origin: 0% 50%  ;
+    transform: rotate(45deg);
+
+}
+
+.box::before{
+    content: "";
+    background: #c13b3b;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    left: 00%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
