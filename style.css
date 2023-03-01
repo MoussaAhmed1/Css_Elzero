@@ -14,46 +14,27 @@
 
 .my-page {
   background: #eee;
+  margin: auto;
+  height: 800px;
+  width: 50%;
   display: grid;
-  height: 100vh;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 50px auto 50px;
-  grid-template-areas: "header header header header header"  "aside aside main main main" "footer footer footer footer footer";
-}
-header{
-    display: grid;
-    grid-area:header ;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: auto ;
-    grid-template-areas: "logo logo nav nav nav";
-}
-nav ul {
-  list-style: none;
-}
-nav ul li {
-  display: inline-flex;
-}
-
-.logo {
-  background-color: var(--mainColor);
-  grid-area: logo;
-}
-nav {
-  background-color: aqua;
-  grid-area: nav;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: repeat(3,1fr);
+  gap: 10px;
+  align-content: center;
   
 }
-aside {
-  background-color: blue;
-  grid-area: aside;
-}
 
-footer {
-  background-color: black;
-  grid-area: footer;
-}
-
-main {
+.box{
   background-color: chocolate;
-  grid-area: main;
+ 
+
+}
+
+#test1{
+  grid-column: span 2;
+}
+
+#test3{
+  grid-row:span 2;
 }
